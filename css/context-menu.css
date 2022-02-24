@@ -1,0 +1,57 @@
+.command-button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 32px;
+  height: 32px;
+  background-color: red;
+}
+
+.command-button.active .context-menu {
+  display: inline-block;
+}
+
+.context-menu {
+  position: relative;
+  display: inline-block;
+  left: var(--left);
+  top: var(--top);
+  display: none;
+  border: 1px solid #eee;
+  list-style: none;
+  padding: 0.7em 1em;
+  margin: 0;
+  background-color: #fff;
+  font-size: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 2;
+}
+
+.context-menu > li {
+  padding: 0.38em 0;
+  min-width: 140px;
+  cursor: pointer;
+  user-select: none;
+  text-align: left;
+}
+
+.context-menu > li.divider {
+  padding: 0.7em 0 0;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #eee;
+  cursor: default;
+}
+
+.context-menu > li:hover {
+    color: #333;
+}
+
+.context-menu i {
+    display: inline-block;
+    width: 1em;
+    text-align: center;
+    margin-right: 0.3em;
+    color: #333;
+    font-style: normal;
+}
