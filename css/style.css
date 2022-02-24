@@ -52,3 +52,7 @@ main > h1 {
   line-height: 28px;
   font-size: 18px;
 }
+
+.context-menu i {
+  font-family: 'Font Awesome 6 Free'; 
+}
